@@ -1,5 +1,9 @@
-rag_env/
+rag_clean_env/
 __pycache__/
 *.pyc
 chunked_docs.pkl
 data/
+Useless_code/
+embeddings_cpu_v1/
+embeddings_gpu_v1/
+clean_chunks.npy
