@@ -6,7 +6,7 @@ This project is a modular Retrieval-Augmented Generation (RAG) system built from
 
 The system transforms raw documents into searchable knowledge using embedding models and FAISS vector indexing, then uses a local LLM to generate context-aware answers.
 
----
+
 
 ## Pipeline Architecture
 
@@ -18,7 +18,7 @@ Documents → Chunking → Embeddings → FAISS Index → Retrieval → LLM Gene
 
 Each stage is modular and can be improved independently without breaking the overall pipeline.
 
----
+
 
 ## Key Components
 
@@ -26,7 +26,7 @@ Each stage is modular and can be improved independently without breaking the ove
 
 Raw text documents are split into smaller, semantically meaningful chunks for better retrieval accuracy.
 
----
+
 
 ### 2. Embedding Generation (GPU-accelerated)
 
@@ -37,7 +37,7 @@ Chunks are converted into dense vector representations using:
 
 This allows high-quality semantic encoding of text.
 
----
+
 
 ### 3. Vector Database (FAISS)
 
@@ -47,7 +47,7 @@ Embeddings are stored in a FAISS index for fast similarity search.
 - Optimized for large-scale retrieval  
 - Enables fast top-k document lookup  
 
----
+
 
 ### 4. Retriever
 
@@ -57,7 +57,7 @@ Given a user query:
 - FAISS retrieves top-k most relevant chunks  
 - Returns ranked context passages  
 
----
+
 
 ### 5. LLM Answer Generation
 
@@ -67,7 +67,7 @@ A local instruction-tuned model (Zephyr 7B) is used to generate answers:
 - Reduces hallucination by constraining responses  
 - Produces structured natural language answers  
 
----
+
 
 ## Features
 
@@ -78,7 +78,7 @@ A local instruction-tuned model (Zephyr 7B) is used to generate answers:
 - Local LLM inference (no API dependency)  
 - Clean separation of retriever and generator  
 
----
+
 
 ## Tech Stack
 
@@ -89,7 +89,7 @@ A local instruction-tuned model (Zephyr 7B) is used to generate answers:
 - HuggingFace Transformers  
 - Zephyr 7B (LLM)  
 
----
+
 
 ## Current Status
 
@@ -99,7 +99,7 @@ A local instruction-tuned model (Zephyr 7B) is used to generate answers:
 - Retriever: Functional semantic search  
 - RAG pipeline: End-to-end working locally  
 
----
+
 
 ## Goal
 
