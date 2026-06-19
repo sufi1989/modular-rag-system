@@ -90,6 +90,7 @@ A local instruction-tuned model (Zephyr 7B) is used to generate answers:
 - Zephyr 7B (LLM)  
 
 
+## This project is under active development. 
 
 ## Current Status
 
